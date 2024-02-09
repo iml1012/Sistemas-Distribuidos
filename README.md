@@ -1,2 +1,2 @@
-# Sistemas_Distribuidos
+# Sistemas Distribuidos
 Repositorio destinado a la asignatura Sistemas Distribuidos de la Ing. Informática (UBU)
