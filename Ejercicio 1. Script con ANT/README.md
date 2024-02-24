@@ -16,9 +16,10 @@ Asegúrate de tener instalado lo siguiente en tu sistema:
 
 ## Uso
 
-1. Ejecuta el siguiente comando para compilar el programa:
+Ejecuta el siguiente comando para compilar el programa:
 
-    **PS D:\Estudios\Eclipse\MiProyectoAnt> ant**
+    PS D:\Estudios\Eclipse\MiProyectoAnt> ant
+   
     Buildfile: D:\Estudios\Eclipse\MiProyectoAnt\build.xml
 
     init:
@@ -51,7 +52,10 @@ Asegúrate de tener instalado lo siguiente en tu sistema:
         BUILD SUCCESSFUL
         Total time: 1 second
 
-    **PS D:\Estudios\Eclipse\MiProyectoAnt> java -jar .\dist\MiProyectoAnt.jar**
+Ejecuta el siguiente comando para ejecutar el programa JAR
+
+    PS D:\Estudios\Eclipse\MiProyectoAnt> java -jar .\dist\MiProyectoAnt.jar
+   
     Hola mundo! Este es mi proyecto para la práctica ANT
 
 ## Información extra sobre ANT.
