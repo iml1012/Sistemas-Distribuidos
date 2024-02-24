@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ubu.sistemasDistribuidos.Practica2.mi_aplicacion_mavel.AppTest" time="0.019" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\Estudios\Eclipse\mi-aplicacion-mavel\target\test-classes;D:\Estudios\Eclipse\mi-aplicacion-mavel\target\classes;C:\Users\Manza\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Manza\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="user.country" value="ES"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-1.8\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\Manza\AppData\Local\Temp\surefire3002059213760082452\surefirebooter5877670303947433200.jar C:\Users\Manza\AppData\Local\Temp\surefire3002059213760082452 2024-02-24T20-03-03_147-jvmRun1 surefire3578684923296627384tmp surefire_0268062812985995347tmp"/>
+    <property name="surefire.test.class.path" value="D:\Estudios\Eclipse\mi-aplicacion-mavel\target\test-classes;D:\Estudios\Eclipse\mi-aplicacion-mavel\target\classes;C:\Users\Manza\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Manza\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Manza"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-1.8\jre"/>
+    <property name="basedir" value="D:\Estudios\Eclipse\mi-aplicacion-mavel"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Manza\AppData\Local\Temp\surefire3002059213760082452\surefirebooter5877670303947433200.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk-1.8\jre\lib\resources.jar;C:\Program Files\Java\jdk-1.8\jre\lib\rt.jar;C:\Program Files\Java\jdk-1.8\jre\lib\jsse.jar;C:\Program Files\Java\jdk-1.8\jre\lib\jce.jar;C:\Program Files\Java\jdk-1.8\jre\lib\charsets.jar;C:\Program Files\Java\jdk-1.8\jre\lib\jfr.jar;C:\Program Files\Java\jdk-1.8\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_401-b10"/>
+    <property name="user.name" value="Manza"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk-1.8\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Manza\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Manza\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_401"/>
+    <property name="user.dir" value="D:\Estudios\Eclipse\mi-aplicacion-mavel"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-1.8\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;D:\CUDA\Desarrollo\bin;D:\CUDA\Desarrollo\libnvvp;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2022.3.0\;D:\Aplicaciones\VS Tools 2022\BuildTools\VC\Tools\MSVC\14.33.31629\bin\Hostx64\x64;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\AutoFirma\AutoFirma;D:\Aplicaciones\w64devkit\bin;D:\Aplicaciones\w64devkit;D:\Aplicaciones\javacc-javacc-7.0.12\scripts;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;D:\Aplicaciones\MathLab\runtime\win64;D:\Aplicaciones\MathLab\bin;C:\Program Files\Java\jdk-1.8\bin;D:\Aplicaciones\Apache\apache-ant-1.10.14\bin;D:\Aplicaciones\Apache\apache-maven-3.9.6\bin;D:\Aplicaciones\Apache\apache-tomcat-10.1.18\bin;D:\Aplicaciones\Apache\glassfish5\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\Users\Manza\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\Manza\AppData\Local\Programs\Python\Python312\;C:\Users\Manza\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Manza\AppData\Local\Programs\Python\Python311\;C:\Users\Manza\AppData\Local\Microsoft\WindowsApps;D:\Aplicaciones\Microsoft VS Code\bin;D:\Aplicaciones\VS Tools 2022\BuildTools\VC\Tools\MSVC\14.34.31933\bin\Hostx64\x64;C:\Program Files\Git\bin;D:\Aplicaciones\w64devkit\bin;D:\Aplicaciones\w64devkit;D:\Aplicaciones\cygwin64\bin;D:\Aplicaciones\javacc-javacc-7.0.12\scripts;C:\Users\Manza\.dotnet\tools;D:\Aplicaciones\JetBrains\PyCharm 2023.3.1\bin;;D:\Aplicaciones\JetBrains\CLion 2023.3.1\bin;;D:\Aplicaciones\JetBrains\IntelliJ IDEA 2023.3.1\bin;;D:\Aplicaciones\JetBrains\DataSpell 2023.3.1\bin;;C:\Users\Manza\AppData\Local\GitHubDesktop\bin;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.401-b10"/>
+    <property name="java.specification.maintenance.version" value="5"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk-1.8\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="shouldAnswerWithTrue" classname="ubu.sistemasDistribuidos.Practica2.mi_aplicacion_mavel.AppTest" time="0.001"/>
+</testsuite>
