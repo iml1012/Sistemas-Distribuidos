@@ -1,0 +1,45 @@
+<project name="MiProyectoAnt" default="all" basedir=".">
+
+    <!-- Configuración de propiedades -->
+    <property name="src.dir" value="src" />
+    <property name="build.dir" value="bin" />
+    <property name="doc.dir" value="doc" />
+    <property name="jar.dir" value="dist" />
+    <property name="jar.file" value="MiProyectoAnt.jar" />
+
+    <!-- Inicializar el directorio de construcción -->
+    <target name="init">
+        <mkdir dir="${build.dir}" />
+        <mkdir dir="${doc.dir}" />
+        <mkdir dir="${jar.dir}" />
+    </target>
+
+    <!-- Compilación -->
+    <target name="compile" depends="init">
+        <javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="false" />
+    </target>
+
+    <!-- Generación de documentación -->
+    <target name="javadoc" depends="compile">
+        <javadoc destdir="${doc.dir}">
+            <fileset dir="${src.dir}">
+                <include name="**/*.java" />
+            </fileset>
+        </javadoc>
+    </target>
+
+
+    <!-- Creación del archivo JAR -->
+    <target name="jar" depends="compile">
+        <jar destfile="${jar.dir}/${jar.file}" basedir="${build.dir}">
+            <manifest>
+                <attribute name="Main-Class" value="MiProyectoAnt" />
+            </manifest>
+        </jar>
+    </target>
+
+    <!-- Tarea por defecto para realizar todas las acciones -->
+    <target name="all" depends="compile,javadoc,jar">
+    </target>
+
+</project>
