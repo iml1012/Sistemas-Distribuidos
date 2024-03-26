@@ -1,0 +1,60 @@
+<project name="Sockets_P01" default="all" basedir=".">
+
+    <!-- Configuración de propiedades -->
+    <property name="src.dir" value="src" />
+    <property name="build.dir" value="bin" />
+    <property name="doc.dir" value="doc" />
+    <property name="jar.dir" value="dist" />
+    <property name="jar.file" value="Sockets_P01.jar" />
+	<property name="name" value="Sockets_P01" />
+	<property name="version" value="1.0.0" />
+
+    <!-- Inicializar el directorio de construcción -->
+    <target name="init">
+        <mkdir dir="${build.dir}" />
+        <mkdir dir="${doc.dir}" />
+        <mkdir dir="${jar.dir}" />
+    </target>
+
+    <!-- Compilación -->
+    <target name="compile" depends="init">
+        <javac srcdir="${src.dir}" destdir="${build.dir}" />
+    </target>
+
+    <!-- Generación de documentación -->
+    <target name="javadoc" depends="compile">
+        <javadoc destdir="${doc.dir}">
+            <fileset dir="${src.dir}">
+                <include name="**/*.java" />
+            </fileset>
+        </javadoc>
+    </target>
+
+
+	<target name="cliente" depends="compile">
+	        <jar jarfile="ChatClient-v${version}.jar" basedir="${build.dir}">
+	            <manifest>
+	                <attribute name="Built-By" value="${user.name}" />
+	                <attribute name="Specification-Title" value="ChatClient" />
+	                <attribute name="Specification-Version" value="${version}" />
+	                <attribute name="Main-Class" value="es.ubu.lsi.client.ChatClientImpl" />
+	            </manifest>
+	        </jar>
+	    </target>
+		
+		<target name="servidor" depends="compile">
+		    <jar jarfile="ChatServer-v${version}.jar" basedir="${build.dir}">
+		        <manifest>
+		            <attribute name="Built-By" value="${user.name}" />
+		            <attribute name="Specification-Title" value="ChatServer" />
+		            <attribute name="Specification-Version" value="${version}" />
+		            <attribute name="Main-Class" value="es.ubu.lsi.server.ChatServerImpl" />
+		        </manifest>
+		    </jar>
+		</target>
+
+    <!-- Tarea por defecto para realizar todas las acciones -->
+    <target name="all" depends="compile,javadoc,cliente,servidor">
+    </target>
+
+</project>
