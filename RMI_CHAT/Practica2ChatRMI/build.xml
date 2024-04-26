@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Practica2ChatRMI" default="main">
+
+    <!-- Propiedades del proyecto -->
+    <property name="src.dir" value="${basedir}/src" />
+    <property name="build.dir" value="${basedir}/bin" />
+    <property name="doc.dir" value="${basedir}/doc" />
+    <property name="name" value="Practica2ChatRMI" />
+    <property name="version" value="1.0.0" />
+    
+    <target name="init">
+        <tstamp />
+        <!-- Las propiedades ya están definidas arriba -->
+    </target>
+    
+    <!-- Asegura que los directorios necesarios existan -->
+    <target name="mkdir">
+        <mkdir dir="${build.dir}" />
+        <mkdir dir="${doc.dir}" />
+    </target>
+
+    <target name="compila" depends="init, mkdir" description="Compila">
+        <javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="false" >
+            <exclude name="test/java/es/ubu/lsi/**/*.java"/>
+        </javac>
+    </target>
+ 
+    <target name="empaqueta-cliente" depends="compila" description="Empaqueta el cliente">
+        <jar jarfile="ChatClient-v${version}.jar" basedir="${build.dir}">
+            <manifest>
+                <attribute name="Built-By" value="${user.name}" />
+                <attribute name="Specification-Title" value="ChatClient" />
+                <attribute name="Specification-Version" value="${version}" />
+                <attribute name="Main-Class" value="es.ubu.lsi.client.ChatClientStarter" />
+            </manifest>
+        </jar>
+    </target>
+	
+	<target name="empaqueta-servidor" depends="compila" description="Empaqueta el servidor">
+	    <jar jarfile="ChatServer-v${version}.jar" basedir="${build.dir}">
+	        <manifest>
+	            <attribute name="Built-By" value="${user.name}" />
+	            <attribute name="Specification-Title" value="ChatServer" />
+	            <attribute name="Specification-Version" value="${version}" />
+	            <attribute name="Main-Class" value="es.ubu.lsi.server.ChatServerStarter" />
+	        </manifest>
+	    </jar>
+	</target>
+
+    
+    <!-- Genera documentación Javadoc -->
+    <target name="doc" depends="init" description="Genera documentación del proyecto.">
+        <javadoc encoding="WINDOWS-1252" charset="UTF-8" docencoding="UTF-8" destdir="${doc.dir}" source="1.8" access="private">
+            <fileset dir="${src.dir}" casesensitive="yes">
+                <include name="**/*.java" />
+            	<exclude name="test/java/es/ubu/lsi/**/*.java"/>
+                <exclude name="module-info.java" />
+            </fileset>
+        </javadoc>
+    </target>
+
+    <target name="main" depends="compila, empaqueta-cliente, empaqueta-servidor, doc" description="Compila, empaqueta y genera documentación.">
+        <echo message="Proyecto compilado, empaquetado y documentado." />
+    </target>
+ 
+</project>
