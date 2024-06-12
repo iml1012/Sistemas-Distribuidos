@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	
+	</head>
+	<body>
+		<section class="vh-100 bg-secondary">
+		  <div class="container py-5 h-100">
+		    <div class="row d-flex justify-content-center align-items-center h-100">
+		      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+		        <div class="card shadow-2-strong" style="border-radius: 1rem;">
+		          <div class="card-body p-5 text-center">
+					<h4 class="mb-5 alert alert-danger" th:if="${nouser}">Usuario o contraseña incorrecta</h4>
+		            <h3 class="mb-5">Sign in</h3>
+					<form action="/checkLogin" method="POST"> 
+			            <div data-mdb-input-init class="form-outline mb-4">
+			              <input type="email" id="typeEmailX-2" name="email" class="form-control form-control-lg" />
+			              <label class="form-label" for="typeEmailX-2">Email</label>
+			            </div>
+			
+			            <div data-mdb-input-init class="form-outline mb-4">
+			              <input type="password" id="typePasswordX-2" name="password" class="form-control form-control-lg" />
+			              <label class="form-label" for="typePasswordX-2">Password</label>
+			            </div>
+					
+			            <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+					</form>
+		            <hr class="my-4">
+		
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</section>
+	</body>
+</html>
